@@ -314,51 +314,51 @@ db_facade = DBFacade()
 
 while True:
     menu = ("\n"
-            "1 - show all cityes \n"
-            "2 - show_all_city_in_region\n"
-            "3 - the biggest cityes\n"
-            "4 - the biggest cities by population\n"
-            "5 - information about one city\n"
-            "6 - add attraction\n"
-            "7 - show all attraction in city\n"
-            "8 - add route\n"
-            "9 - show_road_between_cityes\n"
-            "10 - add city in table\n"
+            "1 - add city in table\n"
+            "2 - show all cityes \n"
+            "3 - show_all_city_in_region\n"
+            "4 - the biggest cityes\n"
+            "5 - the biggest cities by population\n"
+            "6 - information about one city\n"
+            "7 - add attraction\n"
+            "8 - show all attraction in city\n"
+            "9 - add route\n"
+            "10 - show_road_between_cityes\n"
             "11 - exit"
             )
     print(menu)
     user_choise = input("Enter an action: ")
     if user_choise == '11':
         break
-    elif user_choise == '1':
+    elif user_choise == '2':
         db_facade.show_all_city()
         input("\nEnter different sympol for continue.")
-    elif user_choise == '2':
+    elif user_choise == '3':
         print("Possible to chose next regions: 'Витебская', 'Гродненская', 'Брестская', 'Гомельская', 'Могилевская', 'Минская'")
         db_facade.show_all_city_in_region()
         input("\nEnter different sympol for continue.")
-    elif user_choise == '3':
+    elif user_choise == '4':
         db_facade.the_biggest_cities()
         input("\nEnter different sympol for continue.")
-    elif user_choise == '4':
+    elif user_choise == '5':
         db_facade.the_biggest_cities_by_population()
         input("\nEnter different sympol for continue.")
-    elif user_choise == '5':
+    elif user_choise == '6':
         db_facade.information_city_name()
         input("\nEnter different sympol for continue.")
-    elif user_choise == '6':
+    elif user_choise == '7':
         db_facade.add_attraction()
         input("\nEnter different sympol for continue.")
-    elif user_choise == '7':
+    elif user_choise == '8':
         db_facade.show_all_attraction_city()
         input("\nEnter different sympol for continue.")
-    elif user_choise == '8':
+    elif user_choise == '9':
         db_facade.add_route()
         input("\nEnter different sympol for continue.")
-    elif user_choise == '9':
+    elif user_choise == '10':
         db_facade.show_road_between_cityes()
         input("\nEnter different sympol for continue.")
-    elif user_choise == '10':
+    elif user_choise == '1':
         db_facade.add_city()
         input("\nEnter different sympol for continue.")
 
